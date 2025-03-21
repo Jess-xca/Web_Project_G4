@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
     <title>Website project template</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
   </head>
   <script>
     const loadComponents = (id, url) => {
@@ -22,9 +28,9 @@
       loadComponents("footer", "src/sections/footer.html");
     };
   </script>
-  <body class="bg-slate-200">
+  <body class="">
     <div id="header"></div>
-    <div id="hero"></div>
+    <!-- <div id="hero"></div> -->
     <div id="contact"></div>
     <div id="footer"></div>
   </body>
