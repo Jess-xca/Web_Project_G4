@@ -9,8 +9,13 @@ export default {
     extend: {
       colors: {
         primary: "#9747FF",
-        base: "#E8E5E3",
+        base: "#EFECEA",
+        green: "#00672E",
       },
+      fontFamily: {
+        brutal: ["Brutal Medium, sans-serif,"],
+        urbanist: ["Urbanist, sans-serif"],
+      }
     },
   },
   plugins: [],
