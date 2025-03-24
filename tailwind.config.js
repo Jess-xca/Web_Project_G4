@@ -12,10 +12,6 @@ export default {
         base: "#EFECEA",
         green: "#00672E",
       },
-      fontFamily: {
-        brutal: ["Brutal Medium, sans-serif,"],
-        urbanist: ["Urbanist, sans-serif"],
-      }
     },
   },
   plugins: [],
