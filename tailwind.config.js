@@ -8,6 +8,11 @@ export default {
     extend: {
       colors: {
         primary: "#9747FF",
+        base: "#EFECEA",
+        green: "#00672E",
+      },
+      fontFamily: {
+        custom: ["Urbanist", "sans-serif"],
       },
     },
   },
