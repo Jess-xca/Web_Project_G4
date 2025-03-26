@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./*.{html,js}",
+    "./*.html",
     "./src/sections/*.html",
   ],
   theme: {
@@ -10,6 +10,9 @@ export default {
         primary: "#9747FF",
         base: "#EFECEA",
         green: "#00672E",
+      },
+      fontFamily: {
+        custom: ["Urbanist", "sans-serif"],
       },
     },
   },
