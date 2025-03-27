@@ -1,4 +1,8 @@
 {
+   "scripts": {
+   "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+   "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
   "devDependencies": {
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
