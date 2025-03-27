@@ -12,6 +12,9 @@ export default {
         base: "#EFECEA",
         green: "#00672E",
       },
+      fontFamily: {
+        outfit: ['Outfit', 'sans-serif'],
+      }
     },
   },
   plugins: [],
