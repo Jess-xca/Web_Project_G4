@@ -4,9 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xll': '1024px' ,
         'xxl': '1548px', 
-        '2xxl' : '2560px',
       },
       colors: {
         primary: "#9747FF",
