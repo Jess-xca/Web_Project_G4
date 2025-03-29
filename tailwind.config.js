@@ -1,19 +1,13 @@
-/** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./*.{html,js}",
-    "./src/sections/*.html",
-    "./src/sections/privacy/*.html"
-  ],
+  content: ["./*.html","./src/sections/*.html"],
   theme: {
     extend: {
       colors: {
-        primary: "#9747FF",
         base: "#EFECEA",
-        green: "#00672E",
+        green: "#00672E"
       },
       fontFamily: {
-        outfit: ['Outfit', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif']
       }
     },
   },

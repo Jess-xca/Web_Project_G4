@@ -8,24 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Baumeister Agency</title>
-    <link rel="icon" href="../../../Assets/logo.png">
+    <link rel="icon" href="./assets/logo.png">
   </head>
   <body class="bg-base font-outfit">
-    <script>
-      const loadComponents = (id, url) => {
-        fetch(url)
-          .then((response) => response.text())
-          .then((html) => {
-            document.getElementById(id).innerHTML = html;
-          });
-      };
-
-      window.onload = () => {
-        loadComponents("header", "../header.html");
-        loadComponents("footer", "../footer.html");
-      };
-    </script>
-    <div id="header"></div>
     <section class="mx-5 text-green my-20 md:mx-9 lg:mx-52">
       <style>
 a {
@@ -545,8 +530,8 @@ a {
 
           </div>
     </section>
-
-    <div id="footer"></div>
-
+    <div>
+      <a href="./privacy_pol-page.html">Dummy privacy-pol link</a>
+    </div>
   </body>
 </html>
