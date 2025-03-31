@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#9747FF",
+        yellow: "#FFE800",
+      },
+      fontFamily: {
+        outfit: ["Outfit", "sans-serif"],
       },
     },
   },
