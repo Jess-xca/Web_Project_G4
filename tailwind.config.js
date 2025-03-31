@@ -1,14 +1,16 @@
-/** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./*.{html,js}"],
+  content: ["./*.html","./src/sections/*.html"],
   theme: {
     extend: {
       screens: {
         'xxl': '1548px', 
       },
       colors: {
-        primary: "#9747FF",
+        base: "#EFECEA",
       },
+      fontFamily: {
+        outfit: ["Outfit", "sans-serif"],
+      }
     },
   },
   plugins: [],
