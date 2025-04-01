@@ -6,10 +6,13 @@ export default {
         'xxl': '1548px', 
       },
       colors: {
+        yellow: "#FFE800",
         base: "#EFECEA",
+        green: "#00672E",
+        purple: "#9747FF"
       },
       fontFamily: {
-        outfit: ["Outfit", "sans-serif"],
+        outfit: ['Outfit', 'sans-serif']
       }
     },
   },
