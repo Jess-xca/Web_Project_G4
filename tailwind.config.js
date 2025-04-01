@@ -5,10 +5,11 @@ export default {
       colors: {
         base: "#EFECEA",
         green: "#00672E"
+        purple: "#9747FF"
       },
       fontFamily: {
-        outfit: ["Outfit", "sans-serif"],
-      },
+        outfit: ['Outfit', 'sans-serif']
+      }
     },
   },
   plugins: [],
