@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <title>Website project template</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Baumeister Agentr</title>
+    <link rel="icon" href="./src/assets/logo.png">
   </head>
   <script>
     const loadComponents = (id, url) => {
@@ -24,14 +22,19 @@
     window.onload = () => {
       loadComponents("header", "src/sections/header.html");
       loadComponents("hero", "src/sections/hero.html");
-      loadComponents("contact", "src/sections/contact.html");
+      loadComponents("about", "src/sections/about.html");
+      loadComponents("bs", "src/sections/bs.html");
+      loadComponents("reference", "src/sections/reference.html");
       loadComponents("footer", "src/sections/footer.html");
     };
   </script>
-  <body class="">
+
+  <body class="bg-base font-outfit">
     <div id="header"></div>
     <div id="hero"></div>
-    <div id="contact" class="mb-10"></div>
+    <div id="about"></div>
+    <div id="bs"></div>
+    <div id="reference"></div>
     <div id="footer"></div>
   </body>
 </html>
