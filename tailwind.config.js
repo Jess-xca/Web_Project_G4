@@ -5,6 +5,7 @@ export default {
       colors: {
         yellow: "#FFE800",
         base: "#EFECEA",
+        green: "#00672E",
         purple: "#9747FF"
       },
       fontFamily: {
