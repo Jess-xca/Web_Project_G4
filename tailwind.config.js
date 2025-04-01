@@ -1,7 +1,10 @@
 export default {
-  content: ["./*.{html,js}", "./src/sections/*.html"],
+  content: ["./*.html","./src/sections/*.html"],
   theme: {
     extend: {
+      screens: {
+        'xxl': '1548px', 
+      },
       colors: {
         yellow: "#FFE800",
         base: "#EFECEA",
