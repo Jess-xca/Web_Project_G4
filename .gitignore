@@ -1,4 +1,4 @@
 node_modules/
 dist
 *.lock
-src/sections/contact.html
+src/.prettierrc
