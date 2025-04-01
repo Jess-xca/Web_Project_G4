@@ -1,8 +1,9 @@
 export default {
-  content: ["./*.html","./src/sections/*.html"],
+  content: ["./*.{html,js}", "./src/sections/*.html"],
   theme: {
     extend: {
       colors: {
+        yellow: "#FFE800",
         base: "#EFECEA",
         purple: "#9747FF"
       },
