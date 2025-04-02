@@ -5,5 +5,8 @@
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7"
   }
 }
