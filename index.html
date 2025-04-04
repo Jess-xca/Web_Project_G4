@@ -34,13 +34,20 @@
     };
   </script>
   <body class="bg-base font-outfit">
-    <div id="header"></div>
-    <div id="hero"></div>
-    <div id="about"></div>
-    <div id="bs"></div>
-    <div id="reference"></div>
-    <div id="footer"></div>
- 
+    <div class="relative">
+      <div id="header"></div>
+      <div id="hero"></div>
+      <div id="about"></div>
+      <div class="top-0 lg:sticky flex justify-center z-10 my-16 lg:my-20">
+        <img src="/src/assets/aboutsm.png" alt="yellow-polygon" class="lg:hidden ">
+        <img src="/src/assets/aboutlg.png" alt="yellow-polygon" class="hidden lg:block">
+      </div>
+      <div id="bs"></div>
+      <div id="reference"></div>
+      </div>
+    <div class="relative">
+      <div id="footer"></div>
+    </div>
   <script src="scrollAnimation.js"></script>
   </body>
 </html>
