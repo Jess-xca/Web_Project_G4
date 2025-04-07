@@ -13,20 +13,33 @@
     <link rel="icon" href="./src/assets/logo.png"/>
   </head>
   <body class="bg-base font-outfit">
-    <div class="relative">
-      <div id="header"></div>
-      <div id="hero"></div>
-      <div id="about"></div>
-      <div class="top-0 lg:sticky flex justify-center z-10 my-16 lg:my-20">
-        <img src="/src/assets/aboutsm.png" alt="yellow-polygon" class="lg:hidden ">
-        <img src="/src/assets/aboutlg.png" alt="yellow-polygon" class="hidden lg:block">
+
+    <!-- Mobile Menus -->
+    <div id="mobile-menu" class="hidden"></div>
+    <div id="custom_mobile-menu" class="hidden"></div>
+
+    <!-- Home Page -->
+    <main id="home">
+      <div class="relative">
+        <div id="header"></div>
+        <div id="hero"></div>
+        <div id="about"></div>
+        <div class="top-0 md:sticky flex justify-center z-10 my-16 md:my-20">
+          <img src="/src/assets/aboutsm.png" alt="yellow-polygon" class="md:hidden ">
+          <img src="/src/assets/aboutlg.png" alt="yellow-polygon" class="hidden md:block h-24 w-48 xl:w-auto xl:h-auto">
+        </div>
+        <div id="bs"></div>
+        <div id="reference"></div>
       </div>
-      <div id="bs"></div>
-      <div id="reference"></div>
-    </div>
-    <div class="relative">
-      <div id="footer"></div>
-    </div>
+      <div class="relative">
+        <div id="footer"></div>
+      </div>
+    </main>
+
+    <!-- Imprint & Privacy policy page -->
+    <div id="imprint" class="hidden"></div>
+    <div id="privacy-pol" class="hidden"></div>
+
     <!-- <script src="scrollAnimation.js"></script> -->
     <script src="navigation.js"></script>
   </body>
