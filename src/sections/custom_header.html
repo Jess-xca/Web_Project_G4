@@ -1,37 +1,38 @@
-<header class="fixed left-0 top-0 z-40 w-full bg-opacity-50">
+<header class="fixed left-0 top-0 z-40 w-full bg-opacity-50 xl:px-2">
   <div class="m-2 flex flex-row items-center justify-between p-4 text-green">
+
     <!-- Language Section -->
-    <div class="flex flex-col md:text-2xl">
+    <div class="flex flex-col md:text-2xl xl:self-start">
       <p>DE</p>
       <p>EN</p>
     </div>
 
     <!-- Brand/Title -->
-      <div
-        class="bg-cover px-2 md:hidden"
-        style="background-image: url(&quot;./src/assets/bg.png&quot;)"
-      >
-        <p class="text-3xl font-bold md:hidden"><a href="../../index.html" >Baumeister</a></p>
+    <div class="xl-logo">
+      <a href="/">
+        <div class="bg-cover px-2 md:hidden" style="background-image: url('../assets/bg.png')">
+          <p class="text-3xl font-bold md:hidden">Baumeister</p>
+        </div>
+        <div class="hidden flex-col p-2 text-3xl font-bold md:flex md:text-5xl lg:ml-16">
+          <p>Baumeister</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- mobile/tablet menu & nav-menu -->
+    <div>
+      <div class="block xl:hidden w-10 md:w-16">
+        <a href="./custom_mobile_menu.html">
+          <img src="/src/assets/burgerGreen.svg" alt="menu-icon" class="xl:hidden"/>
+        </a>
       </div>
-      <div
-        class="hidden flex-col p-2 text-3xl font-bold md:flex md:text-5xl lg:ml-16"
-      >
-        <p><a href="../../index.html">Baumeister</a></p>
-      </div>
-  <a href="./custom_mobile_menu.html">
-      <img src="/src/assets/menuGreen.png" alt="hamburger menu" class="md:hidden"/>
-    </a>
-    <a href="./custom_mobile_menu.html">
-      <img src="/src/assets/menuGreenBig.png" alt="hamburger menu" class="hidden md:block lg:hidden"/>
-    </a>
-    <!-- Navigation Menu -->
-    <ul class="hidden lg:flex flex-col text-end text-2xl">
-      <li><a href="/#about">About</a></li>
-      <li><a href="/#services">Services</a></li>
-      <li><a href="/#references">References</a></li>
-      <li><a href="/#footer">Contact</a></li>
-    </ul>
+
+      <ul class="hidden xl:flex flex-col text-right text-2xl leading-[1.2]">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#references">References</a></li>
+        <li><a href="/#footer">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </header>
-
-
