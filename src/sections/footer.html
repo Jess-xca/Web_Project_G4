@@ -4,7 +4,7 @@
          <img src="./src/assets/red-footer.png" alt="footer-shape" class="w-[95%] md:w-[50%]">
        </div>
        <div class="mt-28 text-sm md:text-[16px]">
-         <div class="hidden lg:flex grow w-full justify-between text-2xl">
+         <div class="hidden xl:flex grow w-full justify-between text-2xl">
            <div class="grid">
              <a href="index.html">Agentur Baumeister</a>
              <a href="index.html">Böckhstraße 13</a>
@@ -21,11 +21,11 @@
              <a href="https://www.instagram.com/baumeister_agency">Instagram</a>
            </div>
            <div class="grid text-right self-start">
-             <a href="src/sections/imprint-page.html" class="mb-0">Imprint</a>
-             <a href="src/sections/privacy_pol-page.html">Data privacy</a>
+             <a id="footer-imprint" class="mb-0">Imprint</a>
+             <a id="footer-privacy">Data privacy</a>
            </div>
          </div>
-         <div class="justify-between grow flex flex-col w-full md:mb-5 lg:hidden">
+         <div class="justify-between grow flex flex-col w-full md:mb-5 xl:hidden">
            <div class="grid md:flex grow justify-between">
              <div class="grid mb-8">
                <a href="index.html">Agentur Baumeister</a>
@@ -39,10 +39,10 @@
            </div>
            <div class="flex justify-between gap-4 grow flex-wrap mb-6">
              <div>
-               <a href="src/sections/privacy_pol-page.html">Data privacy</a>
+               <a id="footer-privacy">Data privacy</a>
              </div>
              <div>
-               <a href="src/sections/imprint-page.html">Imprint</a>
+               <a id="footer-imprintS" class="mb-0">Imprint</a>
              </div>
 
              <div>
@@ -56,4 +56,9 @@
        </div>
      </div>
    </footer>
+   <style>
+a{
+  cursor: pointer;
+}
+   </style>
 
