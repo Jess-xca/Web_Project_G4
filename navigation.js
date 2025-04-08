@@ -15,16 +15,8 @@ window.onload = _ => {
     loadComponents("footer", "src/sections/footer.html"),
   ]).then( _ => {
     const menu = document.getElementById("mobile-menu");
-    // const cMenu = document.getElementById("custom_mobile-menu");
+    const cMenu = document.getElementById("custom_mobile-menu");
     const main = document.getElementById("home");
-    document.getElementById("footer-imprintS").addEventListener("click", _ => {
-      _.preventDefault();
-
-      window.location.href = "/src/sections/privacy_pol-page.html";
-      window.addEventListener("DOMContentLoaded", _ => {
-        document.getElementById("imprint").classList.toggle("hidden");
-      })
-    })
     document.getElementById("phone-menu").addEventListener("click", _ => {
       main.classList.toggle("hidden");
       menu.classList.toggle("hidden");
@@ -36,6 +28,18 @@ window.onload = _ => {
     document.getElementById("mm-links").addEventListener("click", _ => {
       main.classList.toggle("hidden");
       menu.classList.toggle("hidden");
+    })
+    document.getElementById("custom-phone-menu").addEventListener("click", _ => {
+      main.classList.toggle("hidden");
+      cMenu.classList.toggle("hidden");
+    })
+    document.getElementById("custom-xphone-menu").addEventListener("click", _ => {
+      main.classList.toggle("hidden");
+      cMenu.classList.toggle("hidden");
+    })
+    document.getElementById("mm-links").addEventListener("click", _ => {
+      main.classList.toggle("hidden");
+      cMenu.classList.toggle("hidden");
     })
   });
 };
