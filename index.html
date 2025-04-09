@@ -6,48 +6,44 @@
     <link rel="stylesheet" href="/dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <title>Baumeister Agentr</title>
-    <link rel="icon" href="./src/assets/logo.png" />
+    <link rel="icon" href="./src/assets/logo.png"/>
   </head>
-  <script>
-    const loadComponents = (id, url) => {
-      fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById(id).innerHTML = html;
-        });
-    };
-
-    window.onload = () => {
-      loadComponents("header", "src/sections/header.html");
-      loadComponents("hero", "src/sections/hero.html");
-      loadComponents("about", "src/sections/about.html");
-      loadComponents("bs", "src/sections/bs.html");
-      loadComponents("reference", "src/sections/reference.html");
-      loadComponents("footer", "src/sections/footer.html");
-    };
-  </script>
   <body class="bg-base font-outfit">
-    <div class="relative">
-      <div id="header"></div>
-      <div id="hero"></div>
-      <div id="about"></div>
-      <div class="top-0 lg:sticky flex justify-center z-10 my-16 lg:my-20">
-        <img src="/src/assets/aboutsm.png" alt="yellow-polygon" class="lg:hidden ">
-        <img src="/src/assets/aboutlg.png" alt="yellow-polygon" class="hidden lg:block">
+
+    <!-- Mobile Menus -->
+    <div id="mob-menu" class="hidden"></div>
+    <div id="cmob-menu" class="hidden"></div>
+
+    <!-- Home Page -->
+    <main id="home" class="">
+      <div class="relative">
+        <div id="header"></div>
+        <div id="hero"></div>
+        <div id="about"></div>
+        <div class="top-0 md:sticky flex justify-center z-10 my-16 md:my-20">
+          <img src="/src/assets/aboutsm.png" alt="yellow-polygon" class="md:hidden ">
+          <img src="/src/assets/aboutlg.png" alt="yellow-polygon" class="hidden md:block h-24 w-48 xl:w-auto xl:h-auto">
+        </div>
+        <div id="bs"></div>
+        <div id="reference"></div>
       </div>
-      <div id="bs"></div>
-      <div id="reference"></div>
+      <div class="relative">
+        <div id="footer"></div>
       </div>
-    <div class="relative">
-      <div id="footer"></div>
+    </main>
+
+    <div id="custom" class="hidden">
+      <div id="custom_header"></div>
+      <div id="privacy-page" class="hidden"></div>
+      <div id="imprint-page" class="hidden"></div>
+      <div id="custom_footer"></div>
     </div>
-  <script src="scrollAnimation.js"></script>
+
+    <script src="scrollAnimation.js"></script>
+    <script src="navigation.js"></script>
   </body>
 </html>
