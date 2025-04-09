@@ -5,41 +5,91 @@ const loadComponents = async (id, url) => {
 };
 window.onload = _ => {
   Promise.all([
-    loadComponents("mobile-menu", "/src/sections/mobile_menu.html"),
-    loadComponents("custom_mobile-menu", "src/sections/custom_mobile_menu.html"),
+    loadComponents("mob-menu", "/src/sections/mobile_menu.html"),
+    loadComponents("cmob-menu", "src/sections/custom_mobile_menu.html"),
     loadComponents("header", "src/sections/header.html"),
     loadComponents("hero", "src/sections/hero.html"),
     loadComponents("about", "src/sections/about.html"),
     loadComponents("bs", "src/sections/bs.html"),
     loadComponents("reference", "src/sections/reference.html"),
     loadComponents("footer", "src/sections/footer.html"),
+    loadComponents("custom_header", "src/sections/custom_header.html"),
+    loadComponents("custom_footer", "src/sections/custom_footer.html"),
+    loadComponents("imprint-page", "src/sections/imprint-page.html"),
+    loadComponents("privacy-page", "src/sections/privacy_pol-page.html"),
   ]).then( _ => {
-    const menu = document.getElementById("mobile-menu");
-    const cMenu = document.getElementById("custom_mobile-menu");
-    const main = document.getElementById("home");
-    document.getElementById("phone-menu").addEventListener("click", _ => {
-      main.classList.toggle("hidden");
-      menu.classList.toggle("hidden");
+
+    const mobileMenu = document.getElementById("mob-menu");
+    const cMobileMenu = document.getElementById("cmob-menu");
+    const closeMenu = document.getElementById("x-menu");
+    const cCloseMenu = document.getElementById("cx-menu");
+    const toggle = document.getElementById("mob-menu-toggle");
+    const cToggle = document.getElementById("cmob-menu-toggle");
+    const menuLinks = document.querySelectorAll(".menu-link");
+    const pages = {
+      'home': document.getElementById("home"),
+      'imprint': document.getElementById("imprint-page"),
+      'privacy': document.getElementById("privacy-page"),
+    };
+    let launcher = null;
+    const custom = document.getElementById("custom");
+
+    // mob-menu
+    toggle.addEventListener("click", _ =>{
+      mobileMenu.classList.remove("hidden");
+      pages['home'].classList.add("hidden");
     })
-    document.getElementById("xphone-menu").addEventListener("click", _ => {
-      main.classList.toggle("hidden");
-      menu.classList.toggle("hidden");
+    closeMenu.addEventListener("click", _ =>{
+      mobileMenu.classList.add("hidden");
+      pages['home'].classList.remove("hidden");
     })
-    document.getElementById("mm-links").addEventListener("click", _ => {
-      main.classList.toggle("hidden");
-      menu.classList.toggle("hidden");
+
+    
+    // menu-links
+    menuLinks.forEach(link =>{
+      link.addEventListener("click", e =>{
+        e.preventDefault();
+        const target = e.target.getAttribute("href").replace("#", "");
+
+        Object.values({
+          'home': document.getElementById("home"),
+          'custom': document.getElementById("custom"),
+        }).forEach(section => section.classList.add("hidden"));
+        if(target === "home" || target === "about" || target === "bs" || target === "reference" || target === "footer"){
+          pages["home"].classList.remove("hidden");
+          if(target !== "home"){
+            setTimeout( _ =>{
+              document.getElementById(target).scrollIntoView({ behavior: "smooth"});
+            }, 50);
+          }
+        } else {
+          custom.classList.remove("hidden");
+          if(target === "imprint"){
+            pages["imprint"].classList.remove("hidden");
+            pages["privacy"].classList.add("hidden");
+          } else {
+            pages["privacy"].classList.remove("hidden");
+            pages["imprint"].classList.add("hidden");
+          }
+          pages[target].classList.remove("hidden");
+
+
+        }
+        window.history.pushState({}, '', `#${target}`);
+        mobileMenu.classList.add("hidden");
+        cMobileMenu.classList.add("hidden");
+      });
+    });
+    // custom-mob-menu
+    cToggle.addEventListener("click", _ =>{
+      cMobileMenu.classList.remove("hidden");
+      custom.classList.add("hidden");
     })
-    document.getElementById("custom-phone-menu").addEventListener("click", _ => {
-      main.classList.toggle("hidden");
-      cMenu.classList.toggle("hidden");
+    cCloseMenu.addEventListener("click", _ =>{
+      cMobileMenu.classList.add("hidden");
+      custom.classList.remove("hidden");
     })
-    document.getElementById("custom-xphone-menu").addEventListener("click", _ => {
-      main.classList.toggle("hidden");
-      cMenu.classList.toggle("hidden");
-    })
-    document.getElementById("mm-links").addEventListener("click", _ => {
-      main.classList.toggle("hidden");
-      cMenu.classList.toggle("hidden");
-    })
-  });
-};
+
+
+  }); // Promise end
+}; // Window.onload end

@@ -10,7 +10,7 @@
     <!-- Brand/Title -->
     <div class="xl-logo">
       <a href="/">
-        <div class="bg-cover px-2 md:hidden" style="background-image: url('../assets/bg.png')">
+        <div class="bg-cover px-2 md:hidden" style="background-image: url('/src/assets/bg.png')">
           <p class="text-3xl font-bold md:hidden">Baumeister</p>
         </div>
         <div class="hidden flex-col p-2 text-3xl font-bold md:flex md:text-5xl lg:ml-16">
@@ -21,17 +21,17 @@
 
     <!-- mobile/tablet menu & nav-menu -->
     <div>
-      <div class="block xl:hidden w-10 md:w-16">
+      <div id="cmob-menu-toggle" class="block xl:hidden w-10 md:w-16">
         <a class="cursor-pointer">
           <img id="custom-phone-menu" src="/src/assets/burgerGreen.svg" alt="menu-icon" class="xl:hidden"/>
         </a>
       </div>
 
       <ul class="hidden xl:flex flex-col text-right text-2xl leading-[1.2]">
-        <li><a href="/#about">About</a></li>
-        <li><a href="/#services">Services</a></li>
-        <li><a href="/#references">References</a></li>
-        <li><a href="/#footer">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#footer">Contact</a></li>
       </ul>
     </div>
   </div>
