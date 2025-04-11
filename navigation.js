@@ -66,7 +66,6 @@ window.onload = _ => {
           }
         } else {
           custom.classList.remove("hidden");
-          // document.getElementById(target).scrollIntoView({ behavior: "smooth"});
           if(target === "imprint"){
             pages["privacy"].classList.add("hidden");
             pages["imprint"].classList.remove("hidden");
@@ -74,7 +73,6 @@ window.onload = _ => {
             pages["privacy"].classList.remove("hidden");
             pages["imprint"].classList.add("hidden");
           }
-          // pages[target].classList.remove("hidden");
           setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }, 50);
