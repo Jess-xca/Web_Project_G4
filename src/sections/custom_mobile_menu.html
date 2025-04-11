@@ -1,171 +1,46 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/dist/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Baumeister Agentr</title>
-    <link rel="icon" href="../assets/logo.png" />
-  </head>
-  <body class="bg-base font-outfit text-green xl:hidden">
-    <section>
-      <div class="fixed left-0 top-0 z-40 w-full bg-opacity-50">
-        <div class="m-2 flex flex-row items-center justify-between w-full p-4 grow">
-          <!-- Language Section -->
-          <div class="flex flex-col md:text-2xl xl:text-3xl">
-            <p>DE</p>
-            <p>EN</p>
-          </div>
-
-          <!-- Brand/Title -->
-          <img
-          src="../assets/Header.png"
-          alt="logo-image"
-          class="md:hidden"
-          />
-          <div
-            class="hidden flex-col p-2 text-3xl font-bold md:flex lg:ml-16 md:text-5xl"
-            >
-            <p>Baumeister</p>
-          </div>
-          <a href="../../../index.html">
-            <img src="/src/assets/xGreen.png" alt="hamburger menu" class="md:hidden"/>
-          </a>
-          <a href="../../../index.html">
-            <img src="/src/assets/xBigGreen.png" alt="hamburger menu" class="hidden md:block xl:hidden"/>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="text-green mt-[150px] text-3xl md:text-5xl font-semibold flex justify-center text-center">
-      <div class="flex flex-col gap-12 md:gap-16">
-        <a href="../../index.html#about">About</a>
-        <a href="../../index.html#bs">Services</a>
-        <a href="../../index.html#reference">References</a>
-        <a href="../../index.html#footer">Contact</a>
-      </div>
-    </section>
-    <section class="relative mx-auto h-full w-full">
-      <!-- Pink Vector -->
-      <div class="xl:hidden">
-        <img
-        src="../assets/PinkVector.png"
-        width="30%"
-        alt=""
-        class="relative left-[53%] top-8"
-        />
-        <!-- Yellow Vector -->
-        <img
-        src="../assets/YellowVector.png"
-        alt=""
-        class="absolute w-[65%] top-[5%] left-0 h-[185%]"
-        data-move="yellow"
-        />
-        <!-- Green Vector 2 -->
-        <img
-        src="../assets/GreenVector2.png"
-        alt=""
-        width="41%"
-        class="absolute right-[0%] top-[56%] md:top-[47%] md:w-[43%]"
-        data-move="green2"
-        />
-        <!-- Blue vector -->
-        <img
-        src="../assets/BlueVector.png"
-        alt=""
-        width="60%"
-        class="absolute left-[35%] top-20 lg:top-[30%] md:top-[35%]"
-        data-move="blue"
-        />
-        <!-- Red Vector -->
-        <img
-        src="../assets/RedVector.png"
-        alt=""
-        width="74%"
-        class="absolute top-[110%] left-[22%]"
-        data-move="red"
-        />
-        <!-- Green Vector -->
-        <img
-        src="../assets/GreenVector1.png"
-        alt=""
-        width="53%"
-        class="absolute top-[30%] left-[4%]"
-        />
+<section class="text-green">
+  <div class="fixed left-0 top-0 z-40 w-full bg-opacity-50">
+    <div class="m-2 flex flex-row items-center justify-between w-full p-4 grow">
+      <!-- Language Section -->
+      <div class="flex flex-col md:text-2xl xl:text-3xl">
+        <p>DE</p>
+        <p>EN</p>
       </div>
 
-
-
-      <!-- Desktop version -->
-      <div class="hidden xl:block">
-        <!-- Pink Vector -->
-        <img
-        src="../src/assets/PinkVector.png"
-        width="20%"
-        alt=""
-        class="relative left-[37%]"
-        />
-        <!-- Yellow Vector -->
-        <img
-        src="../src/assets/YellowVector.png"
-        alt=""
-        class="absolute top-[0%] w-[47%]"
-        data-move="yellow"
-        />
-        <!-- Red Vector -->
-        <img
-        src="../src/assets/RedVector.png"
-        alt=""
-        width="50%"
-        class="absolute top-[90%] left-[15%]"
-        data-move="red"
-        />
-        <!-- Green Vector 1 -->
-        <img
-        src="../src/assets/GreenVector1.png"
-        alt=""
-        width="35%"
-        class="absolute top-[10%] left-[18%]"
-        data-move="green1"
-        />
-        <!-- Green Vector 2 -->
-        <img
-        src="../src/assets/GreenVector2.png"
-        alt=""
-        width="26%"
-        class="absolute top-[40%] right-[0%]"
-        data-move="green2"
-        />
-        <!-- Blue vector -->
-        <img
-        src="../src/assets/BlueVector.png"
-        alt=""
-        width="48%"
-        class="absolute top-[10%] right-[10%]"
-        data-move="blue"
-        />
-
-
-        <div
-          class="absolute top-32 z-40 flex h-full w-full items-center justify-center"
-          >
-          <h1
-            class="text-center text-4xl font-normal text-white"
-            >
-            We create focus and <br />
-            drive impact with <br />
-            communication that <br />
-            clearly positions and <br />
-            resonates.
-          </h1>
-        </div>
-
-    </section>
-  </body>
-</html>
+      <!-- Brand/Title -->
+      <a href="/">
+      <img src="/src/assets/customLogo.svg" alt="logo-image" class=" w-48 md:w-72"/>
+      </a>
+      
+      <!-- burger -->
+      <a id="cx-menu" class="cursor-pointer w-10 md:w-16 mr-4">
+        <img src="/src/assets/xgreen.svg" alt="hamburger menu"/>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="text-green mt-[150px] text-3xl md:text-5xl font-semibold flex justify-center text-center">
+  <div class="flex flex-col gap-12 md:gap-16">
+    <a class="menu-link" href="#about">About</a>
+    <a class="menu-link" href="#bs">Services</a>
+    <a class="menu-link" href="#reference">References</a>
+    <a class="menu-link" href="#footer">Contact</a>
+  </div>
+</section>
+<section class="relative mx-auto h-full w-full">
+  <!-- Pink Vector -->
+  <div class="xl:hidden">
+    <img src="/src/assets/PinkVector.png" width="30%" alt="" class="relative left-[53%] top-8"/>
+    <!-- Yellow Vector -->
+    <img src="/src/assets/YellowVector.png" alt="" class="absolute w-[65%] top-[5%] left-0 h-[185%]" data-move="yellow"/>
+    <!-- Green Vector 2 -->
+    <img src="/src/assets/GreenVector2.png" alt="" width="41%" class="absolute right-[0%] top-[56%] md:top-[47%] md:w-[43%]" data-move="green2"/>
+    <!-- Blue vector -->
+    <img src="/src/assets/BlueVector.png" alt="" width="60%" class="absolute left-[35%] top-20 lg:top-[30%] md:top-[35%]"
+    data-move="blue" />
+    <!-- Red Vector -->
+    <img src="/src/assets/RedVector.png" alt="" width="74%" class="absolute top-[110%] left-[22%]" data-move="red" />
+    <!-- Green Vector -->
+    <img src="/src/assets/GreenVector1.png" alt="" width="53%" class="absolute top-[30%] left-[4%]" />
+  </div>
+</section>
