@@ -31,20 +31,22 @@ window.onload = _ => {
       'imprint': document.getElementById("imprint-page"),
       'privacy': document.getElementById("privacy-page"),
     };
-    let launcher = null;
     const custom = document.getElementById("custom");
 
     // mob-menu
     toggle.addEventListener("click", _ =>{
-      mobileMenu.classList.remove("hidden");
       pages['home'].classList.add("hidden");
+      mobileMenu.classList.remove("hidden");
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 50);
     })
     closeMenu.addEventListener("click", _ =>{
       mobileMenu.classList.add("hidden");
       pages['home'].classList.remove("hidden");
     })
 
-    
+
     // menu-links
     menuLinks.forEach(link =>{
       link.addEventListener("click", e =>{
@@ -64,14 +66,18 @@ window.onload = _ => {
           }
         } else {
           custom.classList.remove("hidden");
+          // document.getElementById(target).scrollIntoView({ behavior: "smooth"});
           if(target === "imprint"){
-            pages["imprint"].classList.remove("hidden");
             pages["privacy"].classList.add("hidden");
+            pages["imprint"].classList.remove("hidden");
           } else {
             pages["privacy"].classList.remove("hidden");
             pages["imprint"].classList.add("hidden");
           }
-          pages[target].classList.remove("hidden");
+          // pages[target].classList.remove("hidden");
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }, 50);
 
 
         }
@@ -82,8 +88,11 @@ window.onload = _ => {
     });
     // custom-mob-menu
     cToggle.addEventListener("click", _ =>{
-      cMobileMenu.classList.remove("hidden");
       custom.classList.add("hidden");
+      cMobileMenu.classList.remove("hidden");
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 50);
     })
     cCloseMenu.addEventListener("click", _ =>{
       cMobileMenu.classList.add("hidden");
