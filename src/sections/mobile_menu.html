@@ -1,4 +1,6 @@
-<section class="fixed xl:hidden left-0 top-0 z-40 w-full bg-opacity-50">
+<div class="overflow-hidden">
+
+<section class="fixed xl:hidden left-0 top-0 z-40 w-full bg-opacity-50 overflow-hidden">
   <div class="m-2 flex flex-row items-center justify-between w-full p-4 grow text-black">
 
     <!-- Language Section -->
@@ -17,7 +19,7 @@
     </a>
   </div>
 </section>
-<section id="top-menu" class="text-green mt-[150px] text-3xl md:text-5xl font-semibold flex justify-center text-center">
+<section id="top-menu" class="text-green mt-[150px] text-3xl md:text-5xl font-semibold flex justify-center text-center relative z-10">
   <div class="flex flex-col gap-12 md:gap-16">
     <a class="menu-link" href="#about">About</a>
     <a class="menu-link" href="#bs">Services</a>
@@ -25,19 +27,43 @@
     <a class="menu-link" href="#footer">Contact</a>
   </div>
 </section>
-<section class="relative mx-auto h-full w-full">
-  <!-- Pink Vector -->
-  <div class="xl:hidden">
-    <img src="/src/assets/PinkVector.png" width="30%" alt="" class="relative left-[53%] top-8"/>
-    <!-- Yellow Vector -->
-    <img src="/src/assets/YellowVector.png" alt="" class="absolute w-[65%] top-[5%] left-0 h-[185%]"/>
-    <!-- Green Vector 2 -->
-    <img src="/src/assets/GreenVector2.png" alt="" width="41%" class="absolute right-[0%] top-[56%] md:top-[47%] md:w-[43%]"/>
-    <!-- Blue vector -->
-    <img src="/src/assets/BlueVector.png" alt="" width="60%" class="absolute left-[35%] top-20 lg:top-[30%] md:top-[35%]"/>
-    <!-- Red Vector -->
-    <img src="/src/assets/RedVector.png" alt="" width="74%" class="absolute top-[110%] left-[22%]"/>
-    <!-- Green Vector -->
-    <img src="/src/assets/GreenVector1.png" alt="" width="53%" class="absolute top-[30%] left-[4%]"/>
-  </div>
+<section class="relative mx-auto h-full w-full -top-20 z-0">
+
+      <div class="flex xl:hidden relative z-0">
+        <div class="h-[106vw]">
+          <div class="absolute left-0 w-full top-0 h-[140vw]">     <!-- pink -->
+            <div class="sticky h-[68vw] top-[-1.6vw]">
+              <img src="/src/assets/pinkH.svg" alt="pink-shape" class="relative w-[30%] left-[60%] top-[5%]">
+            </div>
+          </div>
+          <div class="absolute left-0 w-full top-0 h-[90vw]">     <!-- green right-->
+            <div class="sticky h-[68vw]">
+              <img src="/src/assets/greenlH.svg" alt="right green-shape" class="relative w-[40%] left-[60%] top-[46%]">
+            </div>
+          </div>
+          <div class="absolute left-0 w-full top-0 h-[100vw]">     <!-- yellow -->
+            <div class="sticky h-[68vw] top-0">
+              <img src="/src/assets/yellowH.svg" alt="yellow-shape" class="relative top-2 w-[77%]">
+            </div>
+          </div>
+          <div class="absolute left-0 w-full top-0 h-[70vw]">     <!-- blue -->
+            <div class="sticky h-[43vw] top-[-4.7vw]">
+              <img src="/src/assets/blueH.svg" alt="blue-shape" class="relative w-[68%] top-[50%] left-[30%]">
+            </div>
+          </div>
+          <div class="absolute left-0 w-full top-0 h-[90vw]">     <!-- red -->
+            <div class="sticky h-[68vw] top-[-33.7vw]">
+              <img src="/src/assets/redH.svg" alt="red-shape" class="relative top-[80%] left-[20%] w-[77%]">
+            </div>
+          </div>
+          <div class="absolute left-0 w-full top-0 h-[90vw]">     <!-- green left -->
+            <div class="sticky h-[35vw] top-[-11vw]">
+              <img src="/src/assets/greenrH.svg" alt="left green-shape" class="relative w-[55%] top-[50%] left-[2%]">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 </section>
+</div>
