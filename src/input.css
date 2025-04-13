@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+  .xl-logo {
+    @apply xl:absolute xl:top-[37%] xl:left-[48%] xl:-translate-x-1/2 xl:-translate-y-1/2;
+  }
+}
